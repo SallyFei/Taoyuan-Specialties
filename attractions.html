@@ -1,0 +1,433 @@
+<!doctype html><html lang="zh-Hant-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}</style><title>桃園區知名景點</title><meta name="claude:viewport-fit-sides" content="cover"><meta name="description" content="桃園區代表性景點介紹、分類篩選與位置示意圖。"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700&display=swap"><style>/* Layout: sticky green-on-cream header, illustrated hero band, card grids on cream, one deep-green band per page for data. */
+:root{
+  --bg:#FAF6EE; --surface:#FFFDF8; --soft:#F1E8D6; --line:#E4D8C0;
+  --ink:#2B2A24; --muted:#675F50;
+  --brand:#2F4A3A; --brand-2:#3E6150; --on-brand:#FAF6EE; --on-brand-muted:#C9D6CC;
+  --accent:#D9772B; --accent-text:#A24E15; --on-accent:#FFFFFF;
+  --brown:#B89B7A; --brown-text:#7A5C3A;
+  --shadow:0 6px 22px rgba(70,52,28,.10); --shadow-hover:0 14px 34px rgba(70,52,28,.18);
+  --chart-1:#D9772B; --chart-2:#2F4A3A; --chart-3:#B89B7A;
+  --f-display:"Noto Serif TC","Songti TC","PMingLiU",serif;
+  --f-body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#161C18; --surface:#202822; --soft:#2A332C; --line:#38443B;
+  --ink:#F1EBDC; --muted:#B3AC9A;
+  --brand:#22372B; --brand-2:#2F4A3A; --on-brand:#F7F1E3; --on-brand-muted:#B7C6BB;
+  --accent:#E58A3C; --accent-text:#F0A261; --on-accent:#1B1408;
+  --brown:#C4A785; --brown-text:#D2B793;
+  --shadow:0 6px 22px rgba(0,0,0,.35); --shadow-hover:0 14px 34px rgba(0,0,0,.5);
+  --chart-1:#E58A3C; --chart-2:#8FBFA2; --chart-3:#C4A785; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#161C18; --surface:#202822; --soft:#2A332C; --line:#38443B;
+  --ink:#F1EBDC; --muted:#B3AC9A;
+  --brand:#22372B; --brand-2:#2F4A3A; --on-brand:#F7F1E3; --on-brand-muted:#B7C6BB;
+  --accent:#E58A3C; --accent-text:#F0A261; --on-accent:#1B1408;
+  --brown:#C4A785; --brown-text:#D2B793;
+  --shadow:0 6px 22px rgba(0,0,0,.35); --shadow-hover:0 14px 34px rgba(0,0,0,.5);
+  --chart-1:#E58A3C; --chart-2:#8FBFA2; --chart-3:#C4A785; color-scheme:dark}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.8;-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+img,svg{max-width:100%}
+a{color:var(--accent-text)}
+h1,h2,h3,h4{font-family:var(--f-display);line-height:1.35;text-wrap:balance;margin:0;font-weight:700}
+p{margin:0}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+.gutter{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1120px;margin:0 auto}
+.section{padding-block:clamp(40px,7vw,80px)}
+.eyebrow{font-size:.8rem;letter-spacing:.14em;color:var(--accent-text);font-weight:700;margin-bottom:10px}
+.sec-title{font-size:clamp(1.5rem,3.4vw,2.1rem);margin-bottom:12px}
+.sec-lead{color:var(--muted);max-width:42em}
+.sec-head{margin-bottom:clamp(24px,4vw,40px)}
+
+/* Header */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bg);border-bottom:1px solid var(--line)}
+.site-header .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{font-family:var(--f-display);font-weight:700;font-size:1.12rem;color:var(--brand);text-decoration:none;white-space:nowrap}
+:root[data-theme="dark"] .brand{color:var(--on-brand)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .brand{color:var(--on-brand)}}
+.brand span{color:var(--accent-text)}
+.nav{display:flex;gap:4px}
+.nav a{display:block;padding:8px 14px;border-radius:999px;text-decoration:none;color:var(--ink);font-weight:500;font-size:.95rem;transition:background .2s,color .2s}
+.nav a:hover{background:var(--soft)}
+.nav a[aria-current="page"]{background:var(--brand);color:var(--on-brand);font-weight:700}
+.burger{display:none;width:44px;height:44px;border:1px solid var(--line);background:var(--surface);border-radius:12px;cursor:pointer;padding:0;align-items:center;justify-content:center;color:var(--ink)}
+.burger svg{width:22px;height:22px}
+@media (max-width:820px){
+  .burger{display:inline-flex}
+  .nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--bg);border-bottom:1px solid var(--line);padding:8px max(16px,env(safe-area-inset-left,0px)) 14px;box-shadow:var(--shadow)}
+  .nav.open{display:flex}
+  .nav a{padding:12px 14px;border-radius:12px}
+}
+@media (max-width:420px){.brand{font-size:1rem}}
+
+/* Hero */
+.hero{background:var(--brand);color:var(--on-brand);position:relative;overflow:hidden}
+.hero .inner{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(20px,4vw,48px);align-items:center;padding-block:clamp(36px,6vw,72px)}
+.hero h1{font-size:clamp(1.9rem,4.6vw,3.1rem);margin:12px 0 16px}
+.hero p.sub{color:var(--on-brand-muted);font-size:1.08rem;max-width:34em}
+.hero .eyebrow{color:#F2B36B}
+.hero .art{border-radius:24px;overflow:hidden;aspect-ratio:400/260;box-shadow:0 18px 40px rgba(0,0,0,.35);min-width:0}
+.hero .art svg{display:block;width:100%;height:100%}
+.hero.page .inner{grid-template-columns:1fr;padding-block:clamp(32px,5vw,56px)}
+.hero.page h1{font-size:clamp(1.7rem,4vw,2.6rem);margin:8px 0 10px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:999px;font-weight:700;text-decoration:none;font-size:1rem;border:2px solid transparent;transition:transform .2s,background .2s,box-shadow .2s;cursor:pointer;font-family:inherit}
+.btn.primary{background:var(--accent);color:var(--on-accent)}
+.btn.primary:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.btn.ghost{border-color:currentColor;color:inherit;background:transparent}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.btn.line{border-color:var(--brand);color:var(--brand);background:transparent}
+:root[data-theme="dark"] .btn.line{border-color:var(--on-brand-muted);color:var(--on-brand)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.line{border-color:var(--on-brand-muted);color:var(--on-brand)}}
+.btn.line:hover{background:var(--soft)}
+@media (max-width:820px){.hero .inner{grid-template-columns:1fr}.hero .art{order:-1}}
+
+/* Intro */
+.intro{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(20px,4vw,48px);align-items:start}
+.intro > *{min-width:0}
+.intro p + p{margin-top:1em}
+.facts{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px 24px;box-shadow:var(--shadow);margin:0;list-style:none}
+.facts li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:.95rem}
+.facts li:last-child{border-bottom:0}
+.facts b{color:var(--muted);font-weight:500;flex:none}
+.facts span{text-align:right}
+@media (max-width:820px){.intro{grid-template-columns:1fr}}
+
+/* Cards */
+.grid{display:grid;gap:clamp(16px,2.4vw,26px)}
+.grid.c4{grid-template-columns:repeat(4,1fr)}
+.grid.c3{grid-template-columns:repeat(3,1fr)}
+.grid.c2{grid-template-columns:repeat(2,1fr)}
+@media (max-width:1000px){.grid.c4{grid-template-columns:repeat(2,1fr)}.grid.c3{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.grid.c4,.grid.c3,.grid.c2{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;min-width:0;transition:transform .28s ease,box-shadow .28s ease}
+.card:hover,.card:focus-within{transform:translateY(-6px);box-shadow:var(--shadow-hover)}
+.card .pic{aspect-ratio:400/260;overflow:hidden;background:var(--soft)}
+.card .pic svg{display:block;width:100%;height:100%;transition:transform .5s ease}
+.card:hover .pic svg{transform:scale(1.07)}
+.card .body{padding:18px 20px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font-size:1.15rem}
+.card p{font-size:.95rem;color:var(--muted)}
+.card .more{margin-top:auto;padding-top:6px}
+.card.flash{outline:3px solid var(--accent);outline-offset:3px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:.74rem;padding:2px 10px;border-radius:999px;background:var(--soft);color:var(--brown-text);font-weight:700;letter-spacing:.04em}
+.tag.o{background:var(--accent);color:var(--on-accent)}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:.92rem;margin:0}
+.kv dt{color:var(--accent-text);font-weight:700;white-space:nowrap}
+.kv dd{margin:0;color:var(--ink)}
+.link-more{color:var(--accent-text);font-weight:700;text-decoration:none;display:inline-flex;gap:6px;align-items:center}
+.link-more:hover{text-decoration:underline}
+
+/* Stats */
+.band{background:var(--brand);color:var(--on-brand)}
+.band .sec-lead{color:var(--on-brand-muted)}
+.band .eyebrow{color:#F2B36B}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media (max-width:900px){.stats{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:420px){.stats{grid-template-columns:1fr}}
+.stat{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:20px 18px;min-width:0}
+.stat .k{font-size:.85rem;color:var(--on-brand-muted);letter-spacing:.06em}
+.stat .v{font-family:var(--f-display);font-size:clamp(1.5rem,3vw,2.1rem);font-weight:700;margin:6px 0 2px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.stat .v small{font-size:.5em;font-weight:500;margin-left:4px;color:var(--on-brand-muted)}
+.stat .n{font-size:.8rem;color:var(--on-brand-muted)}
+.src-note{margin-top:18px;font-size:.84rem;color:var(--on-brand-muted)}
+.src-note a{color:#F2B36B}
+
+/* Timeline */
+.timeline{position:relative;list-style:none;margin:0;padding:0}
+.timeline::before{content:"";position:absolute;left:19px;top:6px;bottom:6px;width:3px;background:var(--line);border-radius:3px}
+.tl{position:relative;padding:0 0 28px 56px}
+.tl::before{content:"";position:absolute;left:11px;top:6px;width:19px;height:19px;border-radius:50%;background:var(--bg);border:5px solid var(--accent)}
+.tl.jp::before{border-color:var(--brand-2)}
+.tl.mod::before{border-color:var(--brown)}
+.tl .yr{font-family:var(--f-display);font-weight:700;font-size:1.25rem;color:var(--accent-text);font-variant-numeric:tabular-nums}
+.tl.jp .yr{color:var(--brand-2)}
+:root[data-theme="dark"] .tl.jp .yr{color:#8FBFA2}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tl.jp .yr{color:#8FBFA2}}
+.tl.mod .yr{color:var(--brown-text)}
+.tl .box{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin-top:6px;box-shadow:var(--shadow);max-width:46em}
+.tl h3{font-size:1.05rem;margin-bottom:4px}
+.tl p{font-size:.94rem;color:var(--muted)}
+@media (min-width:900px){
+  .timeline::before{left:50%;transform:translateX(-1.5px)}
+  .tl{width:50%;padding:0 44px 34px 0;text-align:right}
+  .tl::before{left:auto;right:-10px}
+  .tl:nth-child(even){margin-left:50%;padding:0 0 34px 44px;text-align:left}
+  .tl:nth-child(even)::before{right:auto;left:-10px}
+  .tl .box{margin-left:auto}
+  .tl:nth-child(even) .box{margin-left:0}
+}
+.legend{display:flex;flex-wrap:wrap;gap:16px;font-size:.88rem;color:var(--muted);margin-bottom:26px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+
+/* Culture blocks */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,4vw,48px);align-items:center}
+.split > *{min-width:0}
+.split .art{border-radius:22px;overflow:hidden;aspect-ratio:400/260;box-shadow:var(--shadow)}
+.split .art svg{display:block;width:100%;height:100%}
+.split .txt p + p{margin-top:.9em}
+@media (max-width:820px){.split{grid-template-columns:1fr}}
+.bullets{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+.bullets li{padding-left:22px;position:relative;font-size:.96rem}
+.bullets li::before{content:"";position:absolute;left:2px;top:.7em;width:9px;height:9px;border-radius:50%;background:var(--accent)}
+.bullets b{color:var(--brand)}
+:root[data-theme="dark"] .bullets b{color:var(--on-brand)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .bullets b{color:var(--on-brand)}}
+.bullets li > b:first-child + span{}
+
+/* Filters + map */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+.chip{border:1.5px solid var(--line);background:var(--surface);color:var(--ink);padding:8px 18px;border-radius:999px;font-family:inherit;font-size:.95rem;font-weight:500;cursor:pointer;transition:all .2s}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:var(--on-brand);font-weight:700}
+.map-box{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:14px;box-shadow:var(--shadow)}
+.map-box svg{display:block;width:100%;height:auto}
+.map-note{font-size:.82rem;color:var(--muted);margin-top:8px;padding:0 6px 4px}
+.pin{cursor:pointer}
+.pin circle.dot{transition:r .15s}
+.pin:hover circle.dot,.pin:focus circle.dot{r:11}
+.pin text{font-family:var(--f-body);font-size:13px;font-weight:700;fill:var(--ink);paint-order:stroke;stroke:var(--surface);stroke-width:4px;stroke-linejoin:round}
+.pin.dim{opacity:.22}
+.empty{padding:28px;text-align:center;color:var(--muted)}
+
+/* Charts */
+.charts{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.charts > *{min-width:0}
+@media (max-width:860px){.charts{grid-template-columns:1fr}}
+.chart-card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--shadow);position:relative;color:var(--ink)}
+.chart-card.wide{grid-column:1/-1}
+.chart-card h3{font-size:1.12rem;margin-bottom:4px}
+.chart-card .sub{font-size:.84rem;color:var(--muted);margin-bottom:14px}
+.chart-card svg{display:block;width:100%;height:auto;overflow:visible}
+.chart-card .foot{font-size:.8rem;color:var(--muted);margin-top:10px}
+.legend-row{display:flex;flex-wrap:wrap;gap:14px;font-size:.88rem;margin-top:10px}
+.legend-row i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+#tip{position:fixed;z-index:80;pointer-events:none;background:var(--brand);color:var(--on-brand);padding:8px 12px;border-radius:10px;font-size:.85rem;line-height:1.5;box-shadow:0 8px 22px rgba(0,0,0,.3);opacity:0;transition:opacity .12s;max-width:240px}
+#tip.on{opacity:1}
+.seg{cursor:pointer;transition:opacity .15s,transform .15s}
+.seg:hover,.seg:focus{opacity:.82}
+.ax{fill:var(--muted);font-size:12px;font-family:var(--f-body)}
+.grid-l{stroke:var(--line);stroke-width:1}
+.vlbl{fill:var(--ink);font-size:13px;font-weight:700;font-family:var(--f-body)}
+.analysis{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:900px){.analysis{grid-template-columns:1fr}}
+.analysis .card .body{gap:8px}
+.big{font-family:var(--f-display);font-size:1.9rem;font-weight:700;color:var(--accent-text);font-variant-numeric:tabular-nums}
+
+.back{display:inline-flex;gap:8px;align-items:center;margin-top:20px;color:var(--on-brand);text-decoration:none;font-weight:700;border-bottom:2px solid #F2B36B;padding-bottom:2px}
+.back-row{margin-top:36px}
+
+/* Footer */
+.site-footer{background:var(--brand);color:var(--on-brand);padding-block:48px 28px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1.6fr;gap:32px}
+.f-grid > *{min-width:0}
+@media (max-width:820px){.f-grid{grid-template-columns:1fr}}
+.site-footer h4{font-size:1rem;margin-bottom:10px;color:#F2B36B}
+.site-footer p,.site-footer li{font-size:.88rem;color:var(--on-brand-muted)}
+.site-footer ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.site-footer a{color:var(--on-brand);text-decoration:none}
+.site-footer a:hover{text-decoration:underline}
+.site-footer .src a{color:#F2B36B;overflow-wrap:anywhere}
+.f-brand{font-family:var(--f-display);font-size:1.25rem;font-weight:700;margin-bottom:10px}
+.copy{border-top:1px solid rgba(255,255,255,.18);margin-top:30px;padding-top:18px;font-size:.8rem;color:var(--on-brand-muted)}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style></head><body><header class="site-header"><div class="gutter"><div class="wrap bar"><a class="brand" href="index.html">漫遊桃園<span>・</span>探索桃園區</a><button class="burger" id="burger" aria-label="開啟選單" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><nav class="nav" id="nav" aria-label="主選單"><a href="index.html">首頁</a><a href="history.html">文化歷史</a><a href="attractions.html" aria-current="page">知名景點</a><a href="food.html">食物特色</a><a href="population.html">人口結構</a></nav></div></div></header><main><section class="hero page"><div class="gutter"><div class="wrap inner"><div><div class="eyebrow">知名景點 · ATTRACTIONS</div><h1>知名景點－探索桃園的城市風景</h1><p class="sub">從舊城大廟到虎頭山山林，桃園區把歷史古蹟、公園綠地與藝文空間集中在一個城區，搭乘大眾運輸或步行就能串聯。</p><a class="back" href="index.html">← 返回首頁</a></div></div></div></section>
+<section class="section"><div class="gutter"><div class="wrap">
+<div class="sec-head"><div class="eyebrow">景點地圖</div><h2 class="sec-title">八個地點，大致位置一眼看懂</h2><p class="sec-lead">點選地圖上的標記可跳到對應介紹；使用下方分類按鈕，地圖與卡片會同步篩選。</p></div>
+<div class="map-box"><svg viewBox="0 0 600 380" role="img" aria-label="桃園區景點位置示意圖">
+<path d="M60 220 Q70 120 170 100 Q250 40 360 50 Q470 20 540 80 Q580 160 540 240 Q500 330 400 350 Q260 370 150 340 Q50 320 60 220Z" style="fill:var(--soft);stroke:var(--brown);stroke-width:2;stroke-dasharray:6 5"/>
+<path d="M330 40 Q470 20 540 80 Q580 160 540 230 Q470 200 420 160 Q370 110 330 40Z" style="fill:#7FA98A;opacity:.55"/>
+<path d="M90 330 L520 120" style="stroke:var(--brown);stroke-width:7;stroke-linecap:round;opacity:.55"/>
+<path d="M130 120 L330 350" style="stroke:var(--brown);stroke-width:4;stroke-linecap:round;opacity:.4"/>
+<path d="M80 260 L470 250" style="stroke:var(--brown);stroke-width:4;stroke-linecap:round;opacity:.4"/>
+<text x="470" y="62" class="ax" style="font-size:13px;fill:var(--brand-2);opacity:.95">虎頭山山區</text>
+<text x="238" y="150" class="ax" style="font-size:12px">中正藝文特區</text>
+<rect x="168" y="340" width="14" height="14" rx="3" style="fill:var(--brand)"/><text x="190" y="352" class="ax">桃園火車站（參考）</text>
+<text x="108" y="294" class="ax" style="font-size:12px;opacity:.9" transform="rotate(-22 108 294)">中正路</text>
+<text x="556" y="30" class="ax" text-anchor="middle" style="font-size:14px;font-weight:700">N ↑</text>
+<g class="pin" data-target="a-hutou" data-cat="nature city" tabindex="0" role="button" aria-label="虎頭山公園，前往介紹卡片"><circle class="dot" cx="470" cy="105" r="9" fill="#D9772B" stroke="#fff" stroke-width="3"/><text x="470" y="89" text-anchor="middle">虎頭山公園</text></g><g class="pin" data-target="a-shrine" data-cat="history" tabindex="0" role="button" aria-label="忠烈祠神社，前往介紹卡片"><circle class="dot" cx="425" cy="160" r="9" fill="#D9772B" stroke="#fff" stroke-width="3"/><text x="425" y="144" text-anchor="middle">忠烈祠神社</text></g><g class="pin" data-target="a-terrace" data-cat="nature kids" tabindex="0" role="button" aria-label="大有梯田，前往介紹卡片"><circle class="dot" cx="345" cy="92" r="9" fill="#D9772B" stroke="#fff" stroke-width="3"/><text x="345" y="76" text-anchor="middle">大有梯田</text></g><g class="pin" data-target="a-env" data-cat="nature kids" tabindex="0" role="button" aria-label="環保公園，前往介紹卡片"><circle class="dot" cx="505" cy="190" r="9" fill="#D9772B" stroke="#fff" stroke-width="3"/><text x="505" y="174" text-anchor="middle">環保公園</text></g><g class="pin" data-target="a-jingfu" data-cat="history city" tabindex="0" role="button" aria-label="景福宮，前往介紹卡片"><circle class="dot" cx="300" cy="245" r="9" fill="#D9772B" stroke="#fff" stroke-width="3"/><text x="300" y="229" text-anchor="middle">景福宮</text></g><g class="pin" data-target="a-police" data-cat="history city" tabindex="0" role="button" aria-label="大廟口派出所，前往介紹卡片"><circle class="dot" cx="352" cy="292" r="9" fill="#D9772B" stroke="#fff" stroke-width="3"/><text x="352" y="276" text-anchor="middle">大廟口派出所</text></g><g class="pin" data-target="a-77" data-cat="history city" tabindex="0" role="button" aria-label="77 藝文町，前往介紹卡片"><circle class="dot" cx="205" cy="318" r="9" fill="#D9772B" stroke="#fff" stroke-width="3"/><text x="205" y="302" text-anchor="middle">77 藝文町</text></g><g class="pin" data-target="a-lib" data-cat="city kids" tabindex="0" role="button" aria-label="市立圖書館新總館，前往介紹卡片"><circle class="dot" cx="170" cy="190" r="9" fill="#D9772B" stroke="#fff" stroke-width="3"/><text x="170" y="174" text-anchor="middle">市立圖書館新總館</text></g></svg><p class="map-note">示意圖，僅表示各地點的相對方位，並非精確比例；實際路線請以地圖導航為準。</p></div>
+</div></div></section>
+<section class="section" style="background:var(--soft)"><div class="gutter"><div class="wrap">
+<div class="sec-head"><div class="eyebrow">景點介紹</div><h2 class="sec-title">依興趣挑選你的路線</h2></div>
+<div class="filters" role="group" aria-label="景點分類"><button class="chip" data-filter="all" aria-pressed="true">全部</button><button class="chip" data-filter="nature" aria-pressed="false">自然休閒</button><button class="chip" data-filter="history" aria-pressed="false">歷史文化</button><button class="chip" data-filter="city" aria-pressed="false">城市地標</button><button class="chip" data-filter="kids" aria-pressed="false">親子旅遊</button></div>
+<p id="count" class="map-note" aria-live="polite" style="margin:-8px 0 16px"></p>
+<div class="grid c3"><article class="card" id="a-jingfu" data-cat="history city"><div class="pic"><svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="景福宮插畫" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g12" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F2B36B"/><stop offset="1" stop-color="#FBE5C0"/></linearGradient></defs><rect width="400" height="260" fill="url(#g12)"/><circle cx="320" cy="70" r="30" fill="#FFF3D6" opacity=".9"/><path d="M0 190 Q100 160 200 175 T400 170 V260 H0Z" fill="#6E8B72"/><rect x="0" y="212" width="400" height="48" fill="#C9B08A"/><rect x="90" y="196" width="220" height="10" fill="#A58B66"/><rect x="100" y="188" width="200" height="9" fill="#B99C73"/><rect x="110" y="132" width="180" height="58" fill="#B5432F"/><rect x="122" y="132" width="8" height="58" fill="#8E2F20"/><rect x="160" y="132" width="8" height="58" fill="#8E2F20"/><rect x="200" y="132" width="8" height="58" fill="#8E2F20"/><rect x="240" y="132" width="8" height="58" fill="#8E2F20"/><rect x="270" y="132" width="8" height="58" fill="#8E2F20"/><rect x="186" y="150" width="28" height="40" fill="#5C1E14"/><rect x="136" y="150" width="30" height="22" fill="#E9B04D" opacity=".85"/><rect x="234" y="150" width="30" height="22" fill="#E9B04D" opacity=".85"/><path d="M60 134 Q82 130 100 112 L300 112 Q318 130 340 134 L322 146 L78 146Z" fill="#2F4A3A"/><path d="M78 146 L322 146 L322 150 L78 150Z" fill="#1F3327"/><path d="M120 112 Q136 108 150 90 L250 90 Q264 108 280 112 L268 122 L132 122Z" fill="#3E6150"/><rect x="170" y="74" width="60" height="18" fill="#B5432F"/><path d="M156 76 Q172 72 184 58 L216 58 Q228 72 244 76 L234 84 L166 84Z" fill="#2F4A3A"/><circle cx="200" cy="52" r="5" fill="#E9B04D"/><circle cx="60" cy="132" r="4" fill="#E9B04D"/><circle cx="340" cy="132" r="4" fill="#E9B04D"/><line x1="70" y1="150" x2="70" y2="168" stroke="#5C1E14" stroke-width="2"/><ellipse cx="70" cy="178" rx="9" ry="12" fill="#D9772B"/><line x1="330" y1="150" x2="330" y2="168" stroke="#5C1E14" stroke-width="2"/><ellipse cx="330" cy="178" rx="9" ry="12" fill="#D9772B"/></svg></div><div class="body"><div class="tags"><span class="tag">歷史文化</span><span class="tag">城市地標</span></div><h3>景福宮（大廟）</h3><dl class="kv"><dt>位置</dt><dd>中正路 208 號，桃園舊城中心</dd><dt>特色</dt><dd>清乾隆年間創建、主祀開漳聖王的市定古蹟，假四垂屋頂與匾額彩繪都值得細看。</dd><dt>推薦</dt><dd>一次看懂桃園的信仰與歷史，周邊就是大廟口商圈，參拜後直接吃小吃。</dd></dl></div></article><article class="card" id="a-shrine" data-cat="history"><div class="pic"><svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="桃園神社插畫" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g13" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9DB9B0"/><stop offset="1" stop-color="#E8EFE0"/></linearGradient></defs><rect width="400" height="260" fill="url(#g13)"/><path d="M0 150 Q90 100 200 130 T400 110 V260 H0Z" fill="#46664F"/><path d="M0 190 Q120 150 230 175 T400 160 V260 H0Z" fill="#2F4A3A"/><path d="M170 260 L230 260 L214 150 L186 150Z" fill="#C9B08A"/><line x1="188.8" y1="160" x2="211.2" y2="160" stroke="#A58B66" stroke-width="2"/><line x1="187.12" y1="174" x2="212.88" y2="174" stroke="#A58B66" stroke-width="2"/><line x1="185.44" y1="188" x2="214.56" y2="188" stroke="#A58B66" stroke-width="2"/><line x1="183.76" y1="202" x2="216.24" y2="202" stroke="#A58B66" stroke-width="2"/><line x1="182.08" y1="216" x2="217.92" y2="216" stroke="#A58B66" stroke-width="2"/><line x1="180.4" y1="230" x2="219.6" y2="230" stroke="#A58B66" stroke-width="2"/><line x1="178.72" y1="244" x2="221.28" y2="244" stroke="#A58B66" stroke-width="2"/><line x1="177.04" y1="258" x2="222.96" y2="258" stroke="#A58B66" stroke-width="2"/><rect x="168" y="96" width="9" height="66" fill="#C4402C"/><rect x="223" y="96" width="9" height="66" fill="#C4402C"/><path d="M150 94 Q200 104 250 94 L254 84 Q200 94 146 84Z" fill="#26211C"/><rect x="160" y="108" width="80" height="7" fill="#C4402C"/><rect x="115" y="190" width="10" height="22" fill="#D8D2C2"/><rect x="113" y="184" width="14" height="6" fill="#6B6558"/><rect x="145" y="198" width="10" height="22" fill="#D8D2C2"/><rect x="143" y="192" width="14" height="6" fill="#6B6558"/><rect x="245" y="198" width="10" height="22" fill="#D8D2C2"/><rect x="243" y="192" width="14" height="6" fill="#6B6558"/><rect x="275" y="190" width="10" height="22" fill="#D8D2C2"/><rect x="273" y="184" width="14" height="6" fill="#6B6558"/><circle cx="330" cy="60" r="22" fill="#FFF8E6" opacity=".85"/></svg></div><div class="body"><div class="tags"><span class="tag">歷史文化</span></div><h3>桃園忠烈祠暨神社文化園區</h3><dl class="kv"><dt>位置</dt><dd>成功路三段 200 號（虎頭山）</dd><dt>特色</dt><dd>1938 年落成的日治神社建築群，參道、手水舍、拜殿與本殿配置完整，免門票入園。</dd><dt>推薦</dt><dd>拍照與歷史導覽兩相宜；春節等節慶常有日式市集與表演。</dd></dl></div></article><article class="card" id="a-hutou" data-cat="nature city"><div class="pic"><svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="虎頭山夜景插畫" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g14" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#18253A"/><stop offset="1" stop-color="#44546B"/></linearGradient></defs><rect width="400" height="260" fill="url(#g14)"/><circle cx="170" cy="24" r="1" fill="#FFF3D6" opacity=".8"/><circle cx="338" cy="11" r="0.8" fill="#FFF3D6" opacity=".8"/><circle cx="279" cy="17" r="1" fill="#FFF3D6" opacity=".8"/><circle cx="303" cy="12" r="1.4" fill="#FFF3D6" opacity=".8"/><circle cx="114" cy="9" r="0.8" fill="#FFF3D6" opacity=".8"/><circle cx="227" cy="58" r="0.8" fill="#FFF3D6" opacity=".8"/><circle cx="128" cy="16" r="1.4" fill="#FFF3D6" opacity=".8"/><circle cx="222" cy="12" r="1.4" fill="#FFF3D6" opacity=".8"/><circle cx="68" cy="33" r="1.4" fill="#FFF3D6" opacity=".8"/><circle cx="326" cy="79" r="0.8" fill="#FFF3D6" opacity=".8"/><circle cx="300" cy="79" r="1" fill="#FFF3D6" opacity=".8"/><circle cx="30" cy="33" r="0.8" fill="#FFF3D6" opacity=".8"/><circle cx="290" cy="22" r="1" fill="#FFF3D6" opacity=".8"/><circle cx="219" cy="23" r="1.4" fill="#FFF3D6" opacity=".8"/><circle cx="65" cy="78" r="1" fill="#FFF3D6" opacity=".8"/><circle cx="291" cy="109" r="1.4" fill="#FFF3D6" opacity=".8"/><circle cx="97" cy="18" r="1.4" fill="#FFF3D6" opacity=".8"/><circle cx="297" cy="86" r="0.8" fill="#FFF3D6" opacity=".8"/><circle cx="195" cy="17" r="1.4" fill="#FFF3D6" opacity=".8"/><circle cx="369" cy="13" r="1.4" fill="#FFF3D6" opacity=".8"/><circle cx="35" cy="84" r="0.8" fill="#FFF3D6" opacity=".8"/><circle cx="259" cy="92" r="1.4" fill="#FFF3D6" opacity=".8"/><circle cx="223" cy="104" r="1" fill="#FFF3D6" opacity=".8"/><circle cx="243" cy="79" r="1" fill="#FFF3D6" opacity=".8"/><circle cx="190" cy="43" r="0.8" fill="#FFF3D6" opacity=".8"/><circle cx="97" cy="94" r="0.8" fill="#FFF3D6" opacity=".8"/><circle cx="46" cy="78" r="1" fill="#FFF3D6" opacity=".8"/><circle cx="273" cy="68" r="1" fill="#FFF3D6" opacity=".8"/><circle cx="378" cy="62" r="1" fill="#FFF3D6" opacity=".8"/><circle cx="316" cy="14" r="0.8" fill="#FFF3D6" opacity=".8"/><circle cx="267" cy="58" r="0.8" fill="#FFF3D6" opacity=".8"/><circle cx="392" cy="48" r="0.8" fill="#FFF3D6" opacity=".8"/><circle cx="255" cy="58" r="0.8" fill="#FFF3D6" opacity=".8"/><circle cx="347" cy="14" r="1.4" fill="#FFF3D6" opacity=".8"/><circle cx="298" cy="106" r="1" fill="#FFF3D6" opacity=".8"/><circle cx="179" cy="93" r="1" fill="#FFF3D6" opacity=".8"/><circle cx="309" cy="68" r="1.4" fill="#FFF3D6" opacity=".8"/><circle cx="238" cy="13" r="0.8" fill="#FFF3D6" opacity=".8"/><circle cx="143" cy="65" r="1.4" fill="#FFF3D6" opacity=".8"/><circle cx="345" cy="13" r="0.8" fill="#FFF3D6" opacity=".8"/><circle cx="320" cy="56" r="20" fill="#FFF3D6"/><circle cx="328" cy="52" r="18" fill="#24344B"/><path d="M0 150 Q80 90 170 120 T400 100 V260 H0Z" fill="#26402F"/><path d="M0 185 Q120 140 240 170 T400 150 V260 H0Z" fill="#1D3326"/><rect x="0" y="215" width="400" height="45" fill="#121C16"/><rect x="378" y="239" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="299" y="248" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="370" y="244" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="181" y="221" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="185" y="230" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="63" y="251" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="115" y="238" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="382" y="235" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="204" y="251" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="89" y="248" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="285" y="237" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="224" y="237" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="216" y="242" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="198" y="234" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="46" y="231" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="122" y="234" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="252" y="231" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="148" y="220" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="218" y="254" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="316" y="240" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="357" y="252" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="339" y="223" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="352" y="245" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="208" y="245" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="250" y="245" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="101" y="224" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="229" y="230" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="178" y="223" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="4" y="229" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="55" y="243" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="17" y="224" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="318" y="244" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="328" y="236" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="312" y="243" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="66" y="227" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="242" y="250" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="163" y="225" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="56" y="241" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="139" y="250" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="86" y="253" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="109" y="253" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="79" y="254" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="392" y="253" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="333" y="225" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="137" y="253" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="89" y="242" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="276" y="254" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="172" y="234" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="392" y="232" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="209" y="234" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="269" y="251" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="378" y="221" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="147" y="250" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="103" y="242" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="374" y="242" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="45" y="234" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="120" y="250" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="176" y="233" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="323" y="220" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="338" y="242" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="47" y="227" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="368" y="232" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="95" y="247" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="174" y="225" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="206" y="249" width="3" height="3" fill="#FFE29A" opacity=".9"/><rect x="384" y="225" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="85" y="230" width="3" height="3" fill="#F2B36B" opacity=".9"/><rect x="18" y="229" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="242" y="229" width="3" height="3" fill="#FFFFFF" opacity=".9"/><rect x="309" y="250" width="3" height="3" fill="#FFFFFF" opacity=".9"/></svg></div><div class="body"><div class="tags"><span class="tag">自然休閒</span><span class="tag">城市地標</span></div><h3>虎頭山公園</h3><dl class="kv"><dt>位置</dt><dd>成功路三段，桃園區東北方</dd><dt>特色</dt><dd>桃園區的最高點，有步道、神社與多座廟宇，晚間可俯瞰市區夜景，園區開放時間為 06:00 至 24:00。</dd><dt>推薦</dt><dd>市區內最快進入山林的地點，早晨散步與夜景都適合。</dd></dl></div></article><article class="card" id="a-terrace" data-cat="nature kids"><div class="pic"><svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="大有梯田生態公園插畫" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g15" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFE0D0"/><stop offset="1" stop-color="#F6F0D8"/></linearGradient></defs><rect width="400" height="260" fill="url(#g15)"/><circle cx="64" cy="54" r="24" fill="#FFE29A"/><path d="M0 110 Q120 70 260 100 T400 80 V260 H0Z" fill="#7FA98A"/><path d="M0 130 Q100 112 200 126 T400 118 V160 H0Z" fill="#5E8F6C"/><path d="M0 140 Q100 124 200 137 T400 130 V146 H0Z" fill="#9CCFD8" opacity=".75"/><path d="M0 156 Q100 138 200 152 T400 144 V186 H0Z" fill="#6FA07B"/><path d="M0 166 Q100 150 200 163 T400 156 V172 H0Z" fill="#9CCFD8" opacity=".75"/><path d="M0 182 Q100 164 200 178 T400 170 V212 H0Z" fill="#4C7D5C"/><path d="M0 192 Q100 176 200 189 T400 182 V198 H0Z" fill="#9CCFD8" opacity=".75"/><path d="M0 208 Q100 190 200 204 T400 196 V238 H0Z" fill="#87B38F"/><path d="M0 218 Q100 202 200 215 T400 208 V224 H0Z" fill="#9CCFD8" opacity=".75"/><rect x="318" y="86" width="6" height="30" fill="#7A5A3A"/><circle cx="321" cy="78" r="18" fill="#2F4A3A"/><ellipse cx="90" cy="236" rx="9" ry="6" fill="#B07A45"/><path d="M96 232 Q112 214 100 206" stroke="#B07A45" stroke-width="5" fill="none" stroke-linecap="round"/></svg></div><div class="body"><div class="tags"><span class="tag">自然休閒</span><span class="tag">親子旅遊</span></div><h3>大有梯田生態公園</h3><dl class="kv"><dt>位置</dt><dd>虎頭山風景區西北側山腳下</dd><dt>特色</dt><dd>由荒廢水梯田復育而成，以松鼠為設計主軸，有生態梯田區、森林挑戰區、滑索與戲水池。</dd><dt>推薦</dt><dd>全齡遊戲場結合生態教育，帶孩子放電的好去處。</dd></dl></div></article><article class="card" id="a-env" data-cat="nature kids"><div class="pic"><svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="虎頭山環保公園插畫" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g16" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CDE6F2"/><stop offset="1" stop-color="#F6F0D8"/></linearGradient></defs><rect width="400" height="260" fill="url(#g16)"/><circle cx="330" cy="52" r="22" fill="#FFE29A"/><path d="M0 170 Q100 120 220 150 T400 140 V260 H0Z" fill="#7FA98A"/><path d="M0 210 Q140 180 260 205 T400 195 V260 H0Z" fill="#5E8F6C"/><rect x="90" y="130" width="8" height="70" fill="#D9772B"/><rect x="90" y="130" width="40" height="8" fill="#D9772B"/><path d="M130 134 Q170 150 200 196 L214 192 Q180 140 132 124Z" fill="#E9B04D"/><path d="M260 200 L284 120 L308 200" stroke="#6B4A2F" stroke-width="5" fill="none"/><path d="M320 200 L296 120" stroke="#6B4A2F" stroke-width="5"/><line x1="276" y1="124" x2="274" y2="176" stroke="#33433A" stroke-width="2"/><line x1="296" y1="124" x2="298" y2="176" stroke="#33433A" stroke-width="2"/><rect x="268" y="176" width="36" height="6" fill="#C4402C"/></svg></div><div class="body"><div class="tags"><span class="tag">自然休閒</span><span class="tag">親子旅遊</span></div><h3>虎頭山環保公園</h3><dl class="kv"><dt>位置</dt><dd>虎頭山一帶</dd><dt>特色</dt><dd>老少皆宜的親子公園，結合環保教育與遊憩空間，可串聯虎頭山步道一併走訪。</dd><dt>推薦</dt><dd>適合安排半日親子行程，天氣好時搭配步道更舒服。</dd></dl></div></article><article class="card" id="a-77" data-cat="history city"><div class="pic"><svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="日式宿舍建築插畫" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g17" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9D9BC"/><stop offset="1" stop-color="#FAF1DD"/></linearGradient></defs><rect width="400" height="260" fill="url(#g17)"/><rect x="0" y="206" width="400" height="54" fill="#B99C73"/><rect x="100" y="128" width="200" height="82" fill="#8A6A47"/><rect x="116" y="146" width="34" height="46" fill="#F3E7CC"/><line x1="133" y1="146" x2="133" y2="192" stroke="#8A6A47" stroke-width="2"/><line x1="116" y1="169" x2="150" y2="169" stroke="#8A6A47" stroke-width="2"/><rect x="160" y="146" width="34" height="46" fill="#F3E7CC"/><line x1="177" y1="146" x2="177" y2="192" stroke="#8A6A47" stroke-width="2"/><line x1="160" y1="169" x2="194" y2="169" stroke="#8A6A47" stroke-width="2"/><rect x="204" y="146" width="34" height="46" fill="#F3E7CC"/><line x1="221" y1="146" x2="221" y2="192" stroke="#8A6A47" stroke-width="2"/><line x1="204" y1="169" x2="238" y2="169" stroke="#8A6A47" stroke-width="2"/><rect x="248" y="146" width="34" height="46" fill="#F3E7CC"/><line x1="265" y1="146" x2="265" y2="192" stroke="#8A6A47" stroke-width="2"/><line x1="248" y1="169" x2="282" y2="169" stroke="#8A6A47" stroke-width="2"/><path d="M70 132 L200 74 L330 132 Q330 140 320 140 L80 140 Q70 140 70 132Z" fill="#3A4A44"/><line x1="100" y1="136" x2="145.0" y2="86" stroke="#2A3733" stroke-width="2"/><line x1="118" y1="136" x2="154.9" y2="86" stroke="#2A3733" stroke-width="2"/><line x1="136" y1="136" x2="164.8" y2="86" stroke="#2A3733" stroke-width="2"/><line x1="154" y1="136" x2="174.7" y2="86" stroke="#2A3733" stroke-width="2"/><line x1="172" y1="136" x2="184.6" y2="86" stroke="#2A3733" stroke-width="2"/><line x1="190" y1="136" x2="194.5" y2="86" stroke="#2A3733" stroke-width="2"/><line x1="208" y1="136" x2="204.4" y2="86" stroke="#2A3733" stroke-width="2"/><line x1="226" y1="136" x2="214.3" y2="86" stroke="#2A3733" stroke-width="2"/><line x1="244" y1="136" x2="224.2" y2="86" stroke="#2A3733" stroke-width="2"/><line x1="262" y1="136" x2="234.1" y2="86" stroke="#2A3733" stroke-width="2"/><line x1="280" y1="136" x2="244.0" y2="86" stroke="#2A3733" stroke-width="2"/><line x1="298" y1="136" x2="253.9" y2="86" stroke="#2A3733" stroke-width="2"/><rect x="40" y="130" width="8" height="80" fill="#6B4A2F"/><circle cx="44" cy="110" r="28" fill="#4C7D5C"/><circle cx="60" cy="124" r="20" fill="#3E6150"/><rect x="342" y="170" width="6" height="40" fill="#6B4A2F"/><circle cx="345" cy="160" r="20" fill="#6FA07B"/></svg></div><div class="body"><div class="tags"><span class="tag">歷史文化</span><span class="tag">城市地標</span></div><h3>桃園 77 藝文町</h3><dl class="kv"><dt>位置</dt><dd>近桃園火車站，步行約 7 分鐘</dd><dt>特色</dt><dd>桃園區第一處活化的日式宿舍建築群，保留木造屋舍與庭院，不定期舉辦展覽與活動。</dd><dt>推薦</dt><dd>離車站近、人潮較少，是逛完舊城後歇腳的好地方。</dd></dl></div></article><article class="card" id="a-police" data-cat="history city"><div class="pic"><svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="大廟口派出所插畫" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g18" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9D9E0"/><stop offset="1" stop-color="#F4EBD8"/></linearGradient></defs><rect width="400" height="260" fill="url(#g18)"/><rect x="0" y="212" width="400" height="48" fill="#A8977C"/><rect x="110" y="104" width="180" height="110" fill="#A5503A"/><line x1="110" y1="112" x2="290" y2="112" stroke="#8A3E2B" stroke-width="1"/><line x1="110" y1="120" x2="290" y2="120" stroke="#8A3E2B" stroke-width="1"/><line x1="110" y1="128" x2="290" y2="128" stroke="#8A3E2B" stroke-width="1"/><line x1="110" y1="136" x2="290" y2="136" stroke="#8A3E2B" stroke-width="1"/><line x1="110" y1="144" x2="290" y2="144" stroke="#8A3E2B" stroke-width="1"/><line x1="110" y1="152" x2="290" y2="152" stroke="#8A3E2B" stroke-width="1"/><line x1="110" y1="160" x2="290" y2="160" stroke="#8A3E2B" stroke-width="1"/><line x1="110" y1="168" x2="290" y2="168" stroke="#8A3E2B" stroke-width="1"/><line x1="110" y1="176" x2="290" y2="176" stroke="#8A3E2B" stroke-width="1"/><line x1="110" y1="184" x2="290" y2="184" stroke="#8A3E2B" stroke-width="1"/><line x1="110" y1="192" x2="290" y2="192" stroke="#8A3E2B" stroke-width="1"/><line x1="110" y1="200" x2="290" y2="200" stroke="#8A3E2B" stroke-width="1"/><line x1="110" y1="208" x2="290" y2="208" stroke="#8A3E2B" stroke-width="1"/><path d="M96 108 L200 56 L304 108Z" fill="#4A4F52"/><rect x="96" y="106" width="208" height="6" fill="#33383A"/><path d="M134 150 V132 a14 14 0 0 1 28 0 V150Z" fill="#F3E7CC"/><path d="M190 150 V132 a14 14 0 0 1 28 0 V150Z" fill="#F3E7CC"/><path d="M246 150 V132 a14 14 0 0 1 28 0 V150Z" fill="#F3E7CC"/><path d="M134 204 V176 a14 14 0 0 1 28 0 V204Z" fill="#F3E7CC"/><path d="M246 204 V176 a14 14 0 0 1 28 0 V204Z" fill="#F3E7CC"/><path d="M186 214 V184 a14 14 0 0 1 28 0 V214Z" fill="#4A2A1C"/><rect x="186" y="100" width="28" height="9" fill="#2F4A3A"/></svg></div><div class="body"><div class="tags"><span class="tag">歷史文化</span><span class="tag">城市地標</span></div><h3>大廟口派出所</h3><dl class="kv"><dt>位置</dt><dd>景福宮旁</dd><dt>特色</dt><dd>1927 年創建的日治警察派出所，登錄為歷史建築，設有常設展介紹古城區發展。</dd><dt>推薦</dt><dd>與景福宮相鄰，十分鐘就能補上一段日治城市史。</dd></dl></div></article><article class="card" id="a-lib" data-cat="city kids"><div class="pic"><svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="市立圖書館插畫" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g19" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFD8E8"/><stop offset="1" stop-color="#F4EFE2"/></linearGradient></defs><rect width="400" height="260" fill="url(#g19)"/><rect x="0" y="214" width="400" height="46" fill="#B7B09F"/><rect x="80" y="96" width="240" height="120" fill="#F0E9D8"/><rect x="60" y="86" width="280" height="14" fill="#2F4A3A"/><rect x="96" y="116" width="26" height="86" fill="#7FB1C8" opacity=".85"/><rect x="132" y="116" width="26" height="86" fill="#7FB1C8" opacity=".85"/><rect x="168" y="116" width="26" height="86" fill="#7FB1C8" opacity=".85"/><rect x="204" y="116" width="26" height="86" fill="#7FB1C8" opacity=".85"/><rect x="240" y="116" width="26" height="86" fill="#7FB1C8" opacity=".85"/><rect x="276" y="116" width="26" height="86" fill="#7FB1C8" opacity=".85"/><line x1="80" y1="140" x2="320" y2="140" stroke="#F0E9D8" stroke-width="3"/><line x1="80" y1="170" x2="320" y2="170" stroke="#F0E9D8" stroke-width="3"/><circle cx="46" cy="190" r="26" fill="#6FA07B"/><rect x="43" y="196" width="6" height="22" fill="#6B4A2F"/><circle cx="360" cy="188" r="28" fill="#4C7D5C"/><rect x="357" y="196" width="6" height="22" fill="#6B4A2F"/></svg></div><div class="body"><div class="tags"><span class="tag">城市地標</span><span class="tag">親子旅遊</span></div><h3>桃園市立圖書館新總館</h3><dl class="kv"><dt>位置</dt><dd>中正藝文特區</dd><dt>特色</dt><dd>位於棋盤式街道、新式建築林立的藝文特區，是桃園市立圖書館系統的核心館。</dd><dt>推薦</dt><dd>安靜、明亮又開放，適合親子閱讀或在逛街之餘休息。</dd></dl></div></article></div>
+<p class="map-note" style="margin-top:16px">圖像為原創插畫示意，並非實景照片。開放時間與設施可能調整，請以各景點官方公告為準。</p>
+<div class="back-row"><a class="btn line" href="index.html">← 返回首頁</a></div>
+</div></div></section>
+</main><footer class="site-footer"><div class="gutter"><div class="wrap">
+<div class="f-grid">
+<div><div class="f-brand">漫遊桃園・探索桃園區</div>
+<p>以文化歷史、知名景點、在地美食與人口結構四個主題，介紹桃園市桃園區的過去與現在，提供民眾、學生與觀光旅客認識這座城市的入口。</p></div>
+<div><h4>頁面導覽</h4><ul><li><a href="index.html">首頁</a></li><li><a href="history.html">文化歷史</a></li><li><a href="attractions.html">知名景點</a></li><li><a href="food.html">食物特色</a></li><li><a href="population.html">人口結構</a></li></ul></div>
+<div class="src"><h4>資料來源</h4><ul><li><a href="https://www.mirrormedia.mg/story/20210805cnt008" target="_blank" rel="noopener">鏡傳媒：桃園古城區與景福宮、大廟口派出所</a></li><li><a href="https://smiletaiwan.cw.com.tw/article/7212" target="_blank" rel="noopener">微笑台灣：景福宮與桃園77藝文町</a></li><li><a href="https://supertaste.tvbs.com.tw/travel/353350" target="_blank" rel="noopener">三立／TVBS：桃園神社（桃園忠烈祠暨神社文化園區）</a></li><li><a href="https://gofunit.com/%e8%99%8e%e9%a0%ad%e5%b1%b1%e5%85%ac%e5%9c%92/" target="_blank" rel="noopener">虎頭山公園懶人包</a></li><li><a href="https://www.marieclaire.com.tw/lifestyle/whats-hot/51443" target="_blank" rel="noopener">美麗佳人：大有梯田生態公園</a></li><li><a href="https://city.gvm.com.tw/article/100603" target="_blank" rel="noopener">城市學：桃園神社的歷史脈絡</a></li></ul></div>
+</div>
+<p class="copy">製作目的：桃園區文化與地方特色的教學及觀光介紹。內容由公開資料彙整並以自己的文字改寫；頁面圖像為原創插畫示意，並非實景照片。人口數據以桃園市政府民政局、桃園區戶政事務所及內政部戶政司公布為準，各數據均標示統計年月。景點營運資訊可能異動，出發前請以官方公告為準。© 2026 漫遊桃園・探索桃園區。</p>
+</div></div></footer><div id="tip" role="tooltip"></div><script>(function () {
+  var b = document.getElementById('burger'), n = document.getElementById('nav');
+  if (b && n) {
+    b.addEventListener('click', function () {
+      var o = n.classList.toggle('open');
+      b.setAttribute('aria-expanded', o ? 'true' : 'false');
+    });
+  }
+
+  /* tooltip */
+  var tip = document.getElementById('tip');
+  function showTip(html, e) {
+    if (!tip) return;
+    tip.innerHTML = html; tip.classList.add('on'); moveTip(e);
+  }
+  function moveTip(e) {
+    if (!tip) return;
+    var x = e.clientX + 14, y = e.clientY + 14;
+    var w = tip.offsetWidth, h = tip.offsetHeight;
+    if (x + w > window.innerWidth - 8) x = e.clientX - w - 14;
+    if (y + h > window.innerHeight - 8) y = e.clientY - h - 14;
+    tip.style.left = Math.max(8, x) + 'px'; tip.style.top = Math.max(8, y) + 'px';
+  }
+  function hideTip() { if (tip) tip.classList.remove('on'); }
+  function bindTip(el, html) {
+    el.addEventListener('mouseenter', function (e) { showTip(html, e); });
+    el.addEventListener('mousemove', moveTip);
+    el.addEventListener('mouseleave', hideTip);
+    el.addEventListener('focus', function () {
+      var r = el.getBoundingClientRect();
+      showTip(html, { clientX: r.left + r.width / 2, clientY: r.top + r.height / 2 });
+    });
+    el.addEventListener('blur', hideTip);
+    el.addEventListener('touchstart', function (e) {
+      var t = e.touches[0]; showTip(html, t);
+      setTimeout(hideTip, 2600);
+    }, { passive: true });
+  }
+  var NS = 'http://www.w3.org/2000/svg';
+  function mk(tag, attrs, parent) {
+    var el = document.createElementNS(NS, tag);
+    for (var k in attrs) el.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(el);
+    return el;
+  }
+  var fmt = function (v) { return v.toLocaleString('en-US'); };
+
+  /* filters (attractions / food) */
+  var chips = document.querySelectorAll('[data-filter]');
+  var cards = document.querySelectorAll('[data-cat]');
+  var pins = document.querySelectorAll('.pin');
+  function applyFilter(f) {
+    chips.forEach(function (c) { c.setAttribute('aria-pressed', c.getAttribute('data-filter') === f ? 'true' : 'false'); });
+    var shown = 0;
+    cards.forEach(function (c) {
+      var ok = f === 'all' || c.getAttribute('data-cat').split(' ').indexOf(f) > -1;
+      c.hidden = !ok; if (ok) shown++;
+    });
+    pins.forEach(function (p) {
+      var ok = f === 'all' || p.getAttribute('data-cat').split(' ').indexOf(f) > -1;
+      p.classList.toggle('dim', !ok);
+    });
+    var live = document.getElementById('count');
+    if (live) live.textContent = '目前顯示 ' + shown + ' 項';
+  }
+  chips.forEach(function (c) { c.addEventListener('click', function () { applyFilter(c.getAttribute('data-filter')); }); });
+  if (chips.length) applyFilter('all');
+
+  pins.forEach(function (p) {
+    function go() {
+      applyFilter('all');
+      var t = document.getElementById(p.getAttribute('data-target'));
+      if (t) {
+        t.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        t.classList.add('flash'); setTimeout(function () { t.classList.remove('flash'); }, 1800);
+      }
+    }
+    p.addEventListener('click', go);
+    p.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+  });
+
+  /* ===== population charts ===== */
+  var P = window.POP;
+  if (!P) return;
+
+  /* pie */
+  (function () {
+    var host = document.getElementById('pie'); if (!host) return;
+    var W = 300, H = 300, cx = 150, cy = 150, r = 120, ri = 66;
+    var svg = mk('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img', 'aria-label': '男女人口比例圓餅圖' }, host);
+    var total = P.sex.reduce(function (s, d) { return s + d.v; }, 0), a0 = -Math.PI / 2;
+    P.sex.forEach(function (d, i) {
+      var a1 = a0 + d.v / total * Math.PI * 2, large = a1 - a0 > Math.PI ? 1 : 0;
+      var p = function (R, a) { return (cx + R * Math.cos(a)).toFixed(2) + ' ' + (cy + R * Math.sin(a)).toFixed(2); };
+      var path = mk('path', {
+        d: 'M' + p(r, a0) + ' A' + r + ' ' + r + ' 0 ' + large + ' 1 ' + p(r, a1) + ' L' + p(ri, a1) + ' A' + ri + ' ' + ri + ' 0 ' + large + ' 0 ' + p(ri, a0) + 'Z',
+        'class': 'seg', tabindex: '0', style: 'fill:var(' + d.c + ');stroke:var(--surface);stroke-width:3'
+      }, svg);
+      var pct = (d.v / total * 100).toFixed(1);
+      bindTip(path, '<b>' + d.n + '</b><br>約 ' + fmt(d.v) + ' 人<br>占 ' + pct + '%');
+      var am = (a0 + a1) / 2;
+      var t = mk('text', { x: cx + (r + ri) / 2 * Math.cos(am), y: cy + (r + ri) / 2 * Math.sin(am) + 5, 'text-anchor': 'middle', 'class': 'vlbl', style: 'fill:#fff;pointer-events:none' }, svg);
+      t.textContent = pct + '%';
+      a0 = a1;
+    });
+    var c1 = mk('text', { x: cx, y: cy - 2, 'text-anchor': 'middle', 'class': 'ax', style: 'font-size:12px' }, svg); c1.textContent = '性別比 ♂/♀';
+    var c2 = mk('text', { x: cx, y: cy + 22, 'text-anchor': 'middle', 'class': 'vlbl', style: 'font-size:22px' }, svg); c2.textContent = P.ratio;
+  })();
+
+  /* bars */
+  (function () {
+    var host = document.getElementById('bars'); if (!host) return;
+    var W = 520, H = 250, L = 112, R = 60, T = 14, B = 34, iw = W - L - R, max = 80;
+    var svg = mk('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img', 'aria-label': '各年齡層人口比例長條圖' }, host);
+    [0, 20, 40, 60, 80].forEach(function (g) {
+      var x = L + iw * g / max;
+      mk('line', { x1: x, x2: x, y1: T, y2: H - B, 'class': 'grid-l' }, svg);
+      var t = mk('text', { x: x, y: H - B + 18, 'text-anchor': 'middle', 'class': 'ax' }, svg); t.textContent = g + '%';
+    });
+    var bh = 42, gap = (H - T - B - bh * 3) / 4;
+    P.age.forEach(function (d, i) {
+      var y = T + gap + i * (bh + gap), w = iw * d.p / max;
+      var lb = mk('text', { x: L - 10, y: y + bh / 2 + 5, 'text-anchor': 'end', 'class': 'ax', style: 'font-size:13px;fill:var(--ink)' }, svg); lb.textContent = d.n;
+      var rc = mk('rect', { x: L, y: y, width: w, height: bh, rx: 8, 'class': 'seg', tabindex: '0', style: 'fill:var(' + d.c + ')' }, svg);
+      bindTip(rc, '<b>' + d.n + '</b><br>' + d.p + '%（約 ' + fmt(d.v) + ' 人）');
+      var vt = mk('text', { x: L + w + 8, y: y + bh / 2 + 5, 'class': 'vlbl' }, svg); vt.textContent = d.p + '%';
+    });
+  })();
+
+  /* line */
+  (function () {
+    var host = document.getElementById('line'); if (!host) return;
+    var W = 640, H = 300, L = 62, R = 24, T = 26, B = 40, iw = W - L - R, ih = H - T - B;
+    var x0 = 2001, x1 = 2027, y0 = 320000, y1 = 500000;
+    var X = function (v) { return L + (v - x0) / (x1 - x0) * iw; };
+    var Y = function (v) { return T + (1 - (v - y0) / (y1 - y0)) * ih; };
+    var svg = mk('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img', 'aria-label': '桃園區歷年人口折線圖' }, host);
+    [320000, 360000, 400000, 440000, 480000].forEach(function (g) {
+      mk('line', { x1: L, x2: W - R, y1: Y(g), y2: Y(g), 'class': 'grid-l' }, svg);
+      var t = mk('text', { x: L - 8, y: Y(g) + 4, 'text-anchor': 'end', 'class': 'ax' }, svg); t.textContent = (g / 10000) + ' 萬';
+    });
+    [2001, 2006, 2011, 2016, 2021, 2026].forEach(function (g) {
+      var t = mk('text', { x: X(g), y: H - B + 20, 'text-anchor': 'middle', 'class': 'ax' }, svg); t.textContent = g;
+    });
+    var pts = P.trend;
+    var area = 'M' + X(pts[0].x) + ' ' + Y(y0) + ' ' + pts.map(function (d) { return 'L' + X(d.x) + ' ' + Y(d.v); }).join(' ') + ' L' + X(pts[pts.length - 1].x) + ' ' + Y(y0) + 'Z';
+    mk('path', { d: area, style: 'fill:var(--chart-1);opacity:.14' }, svg);
+    mk('polyline', { points: pts.map(function (d) { return X(d.x) + ',' + Y(d.v); }).join(' '), fill: 'none', style: 'stroke:var(--chart-1);stroke-width:3.5;stroke-linejoin:round;stroke-linecap:round' }, svg);
+    pts.forEach(function (d, i) {
+      var last = i === pts.length - 1;
+      var c = mk('circle', { cx: X(d.x), cy: Y(d.v), r: last ? 7 : 5.5, 'class': 'seg', tabindex: '0', style: 'fill:' + (last ? 'var(--chart-1)' : 'var(--surface)') + ';stroke:var(--chart-1);stroke-width:3' }, svg);
+      bindTip(c, '<b>' + d.l + '</b><br>' + fmt(d.v) + ' 人');
+      if (d.show) {
+        var t = mk('text', { x: X(d.x) + (last ? -6 : 0), y: Y(d.v) - 14, 'text-anchor': last ? 'end' : 'middle', 'class': 'vlbl', style: 'font-size:12px' }, svg);
+        t.textContent = fmt(d.v);
+      }
+    });
+  })();
+})();
+</script></body></html>
